@@ -18,7 +18,7 @@ namespace AM.Infrastructure
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Data Source=DESKTOP-R1OERI8\SQLEXPRESS;
+            optionsBuilder.UseSqlServer(@"Data Source=(localdb)\mssqllocaldb;
             Initial Catalog=RadhwenRmiliDB;Integrated Security=true");
             base.OnConfiguring(optionsBuilder);
         }

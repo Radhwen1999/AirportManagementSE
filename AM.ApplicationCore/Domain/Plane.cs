@@ -14,6 +14,7 @@ namespace AM.ApplicationCore.Domain
         public int Capacity { get; set; }
         public DateTime ManufactureDate { get; set; }
         public int PlaneId { get; set; }
+        public string AirlineLogo { get; set; }
         public PlaneType PlaneType { get; set; }
         public ICollection<Flight> Flights { get; set; }
       
