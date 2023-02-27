@@ -14,10 +14,11 @@ namespace AM.Infrastructure
         public DbSet<Passenger> Passengers { get; set; }
         public DbSet<Plane> Planes { get; set; }
         public DbSet<Staff> Staff{ get; set; }
+        public DbSet<Traveler> Travelers{ get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Data Source=(localdb)\mssqllocaldb;
+            optionsBuilder.UseSqlServer(@"Data Source=DESKTOP-R1OERI8\SQLEXPRESS;
             Initial Catalog=RadhwenRmiliDB;Integrated Security=true");
             base.OnConfiguring(optionsBuilder);
         }
